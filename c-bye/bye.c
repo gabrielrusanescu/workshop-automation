@@ -2,7 +2,7 @@
 #include <string.h>
 
 char *password = "n0t_saf3_4nyw4y";
-
+//P#ASSWORD=test
 int main() {
 
     char input[100];
