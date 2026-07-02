@@ -20,7 +20,7 @@ jobs:
       # On macOS/Windows, the compiler is already installed.
       - name: Compile C program
         run: |
-          if [ "$RUNNER_OS" == "Windows" ]; then
+          if ( "$RUNNER_OS" == "Windows" ); then
             gcc c-bye/bye.c -o c-bye/bye.exe
           else
             gcc c-bye/bye.c -o c-bye/bye
@@ -28,7 +28,7 @@ jobs:
 
       - name: Run application
         run: |
-          if [ "$RUNNER_OS" == "Windows" ]; then
+          if ( "$RUNNER_OS" == "Windows" ); then
             ./c-bye/bye.exe
           else
             ./c-bye/bye
